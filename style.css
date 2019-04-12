@@ -62,12 +62,12 @@ audio {
     color: white;
     background: 
         linear-gradient(
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
         ),
-        url("https://images.unsplash.com/photo-1519096990358-3c121dec4458?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+        url("./assets/images/sermons3.jpg");
     
-    background-size: 500px 500px;
+    background-size: 100% 100%;
     background-repeat: none;
 }
 
@@ -75,12 +75,12 @@ audio {
     color: white;
     background: 
         linear-gradient(
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
         ),
-        url("https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+        url("./assets/images/connect2.jpg");
     
-    background-size: 500px 500px;
+    background-size: 100% 100%;
     background-repeat: none;
 }
 
@@ -88,12 +88,12 @@ audio {
     color: white;
     background: 
         linear-gradient(
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
         ),
-        url("https://images.unsplash.com/photo-1541232876724-6e25c6dfa788?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80");
+        url("./assets/images/connect.jpg");
     
-    background-size: 500px 500px;
+    background-size: 100% 100%;
     background-repeat: none;
 }
 
@@ -101,12 +101,12 @@ audio {
     color: white;
     background: 
         linear-gradient(
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
         ),
-        url("https://images.unsplash.com/photo-1504711331083-9c895941bf81?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+        url("./assets/images/news.jpg");
     
-    background-size: 500px 500px;
+    background-size: 100% 100%;
     background-repeat: none;
 }
 
@@ -114,12 +114,12 @@ audio {
     color: white;
     background: 
         linear-gradient(
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
         ),
-        url("https://images.unsplash.com/photo-1544208757-ddbaebce244e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80");
+        url("./assets/images/faq2.jpg");
     
-    background-size: 500px 500px;
+    background-size: 100% 100%;
     background-repeat: none;
 }
 

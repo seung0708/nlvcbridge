@@ -45,7 +45,7 @@ function initMap() {
         position: { lat: 34.1306434, lng: -118.2666877 }, 
         map: map,
         animation: google.maps.Animation.DROP,
-        icon: "./assets/images/google.png",
+        icon: "./assets/images/bye2.png"
     });
     
     function toggleBounce() {
