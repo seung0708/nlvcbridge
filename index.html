@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -13,31 +13,39 @@
     <title>NLVC | THE BRIDGE</title>
 </head>
 <body>
-  <!-- <div id="cover">
-      <video width="100%" height="100%" autoplay>
-          <source src="https://video.wixstatic.com/video/e43b38_ca4e8d2992154ddeb4660da2d340c478/1080p/mp4/file.mp4" type="video/mp4">
-      </video>
-  </div> -->
-    
   <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-white shadow-sm">
-    <a class="navbar-brand" href="#"><img class="pl-3" src="./assets/images/logo.png" height="50" alt="logo" /> <span class="text-warning">T H E</span> B R I D G E</a>
-    <h6 class="font-italic font-weight-light">a place to connect</h6>
+    <a class="navbar-brand" href="./index.html"><img class="pl-3" src="./assets/images/logo.png" height="50" alt="logo" /> <span class="text-warning">T H E</span> B R I D G E</a>
+    <button class="navbar-toggler border-0 " type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active mx-3">
-          <a class="nav-link" href="#">VISIT <span class="sr-only">(current)</span></a>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="./welcome.html">WELCOME</a>
+        </li>
+        <li class="nav-item mx-3 dropdown">
+          <a class="nav-link" href="#" id="dropdownMenu" data-toggle="dropdown">ABOUT<i class="fas fa-angle-down ml-2"></i></a>
+          <div class="dropdown-menu mt-4" aria-labelledby="dropdownMenu">
+            <a class="dropdown-item" href="./staff.html">PASTORAL STAFF</a>
+            <a class="dropdown-item" href="./values.html">VISION & MISSION VALUES</a>
+          </div>
+        </li>
+        <li class="nav-item mx-3 dropdown">
+          <a class="nav-link" href="#" id="dropdownMenu" data-toggle="dropdown">CONNECT<i class="fas fa-angle-down ml-2"></i></a>
+          <div class="dropdown-menu mt-4" aria-labelledby="dropdownMenu">
+            <a class="dropdown-item" href="./communitygroups.html">COMMUNITY GROUPS</a>
+            <a class="dropdown-item" href="./committees.html">COMMITTEES</a>
+            <a class="dropdown-item" href="./events.html">EVENTS</a>
+          </div>
         </li>
         <li class="nav-item mx-3">
-          <a class="nav-link" href="#">CONNECT<i class="fas fa-angle-down ml-2"></i></a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link" href="#">SERMONS</a>
+          <a class="nav-link" href="./sermons.html">SERMONS</a>
         </li>
         <li class="nav-item mx-3">
           <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">CONTACT</a>
         </li>
         <li class="nav-item mx-3">
-            <a class="nav-link" href="#">GIVE</a>
+            <button class="btn btn-outline-dark px-4 rounded-0 shadow-sm tithely-give-btn" data-church-id="411909">GIVE</button>
           </li>
       </ul>
     </div>
@@ -54,7 +62,7 @@
           <img src="./assets/images/main.jpg" class="d-block w-100" height="640" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h2 class="text-dark">WELCOME TO THE BRIDGE</h2>
-            <p class="text-dark">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p class="text-dark font-italic">"a place to connect"</p>
           </div>
         </div>
         <div class="carousel-item">
@@ -77,11 +85,11 @@
   </div>
   <div class="container-fluid">
     <div class="row text-center" id="middle">
-      <a href="#" class="col-md-2 py-5 px-4" id="test">
+      <a href="./values.html" class="col-md-2 py-5 px-4" id="test">
           <i class="fas fa-church fa-3x mb-4"></i>
           <h6>VISION</h6>
       </a>
-      <a href="#" class="col-md-2 py-5 px-4" id="sermons">
+      <a href="./sermons.html" class="col-md-2 py-5 px-4" id="sermons">
           <i class="fas fa-headphones-alt fa-3x mb-4"></i>
           <h6>SERMONS</h6>
       </a>
@@ -89,7 +97,7 @@
           <i class="fas fa-link fa-3x mb-4"></i>
           <h6>CONNECT</h6>
       </a>
-      <a href="#" class="col-md-2 py-5 px-4" id="events">
+      <a href="./events.html" class="col-md-2 py-5 px-4" id="events">
           <i class="far fa-calendar-alt fa-3x mb-4"></i>
           <h6>UPCOMING <span class="text-warning">EVENTS</span></h6>
       </a>
@@ -102,36 +110,36 @@
           <h6>FAQ</h6>
       </a>
     </div>
-</div>
-
+  </div>
   <div class="row" id="location">
     <div class="col-md-12">
       <div id="map"></div>
       <div class="row">
         <div class="col-md-3 text-center mx-5" id="hello">
-          <h6 class="alert alert-warning shadow-sm border-warning">MAP & DIRECTION</h6>
+          <h6 class="alert alert-warning shadow-sm">MAP & DIRECTION</h6>
         </div>
       </div>
       <div class="row">
-          <div class="col-md-3 text-left mx-5" id="info">
-            <h6 class="alert alert-light border-warning shadow-sm">NLVC | THE BRIDGE
-              <!-- <hr> -->
-              <p class="mt-5 text-right" id="add"><i class="fas fa-map-pin mr-2"></i>4226 Verdant St. LA, CA 90039</p>
+          <div class="col-md-3 text-center mx-5" id="info">
+            <div class="alert alert-light text-right shadow-sm">
+            <h6 class="text-center"><a href="https://goo.gl/maps/UaFNAvKd9JR2" target="_blank"><i class="fas fa-directions alert-light"></i></a> NLVC | THE BRIDGE</h6>
+              <p class="mt-5 text-right" id="add"><i class="fas fa-map-pin mr-2"></i>4226 E. Verdant St. LA, CA 90039</p>
               <p class="mt-2 text-right" id="add"><i class="far fa-clock mr-2"></i>10:45AM</p>
-            </h6>  
+              
+            </div>  
           </div>
         </div>
       <div class="row">
         <div class="col-md-3 ml-5" id="bye">
-          <a href="mailto:nlvcbridge.com" class="btn alert alert-warning shadow-sm border-warning">CONTACT US <i class="fas fa-angle-right ml-2"></i></a>
+          <a href="mailto:nlvcbridge@gmail.com" class="btn alert alert-warning shadow-sm">CONTACT US <i class="fas fa-angle-right ml-2"></i></a>
         </div>
       </div>
     </div>
   </div>
-
+  
   <footer class="footer mt-auto py-3 bg-light">
     <div class="container text-center">
-      T H E <span class="text-warning">B R I D G E</span> &copy; 2019 <i class="fab fa-facebook-square"></i> <i class="fab fa-instagram"></i>
+      T H E <span class="text-warning">B R I D G E</span> &copy; 2019 <a href="https://www.facebook.com/nlvcbridge" target="_blank" class="fab fa-facebook-square"></a> <a href="https://www.instagram.com/nlvcbridge" target="_blank" class="fab fa-instagram"></a> <i class="fab fa-twitter"></i>
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -139,6 +147,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="js/location.js" type="text/javascript"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQHurErpXDh3Y89jvtzzv_O_3tYyoeptI&callback=initMap" type="text/javascript"></script>
+  <script src="https://tithe.ly/widget/v3/give.js?3"></script>
+  <script>
+    var tw = create_tithely_widget();
+  </script>
 </body>
 
 </html>

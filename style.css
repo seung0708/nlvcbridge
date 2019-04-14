@@ -1,15 +1,31 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+h1 {
+    letter-spacing: 10px;
+}
 
-h6 {
+h2, h4, h6 {
     letter-spacing: 5px;
+}
+
+hr {
+    background: #fad778;
+}
+
+p, h3 {
+    letter-spacing: 1px;
 }
 
 a {
     text-decoration: none !important;
     color: black;
 }
+
+a:hover {
+    color: #f0ad4e;
+}
+
 #add {
     letter-spacing: 0px;
 }
@@ -25,10 +41,28 @@ a {
 
 #bye {
     margin-top: -70px;
+    
+}
+
+#cg {
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+#cgp {
+    letter-spacing: 0;
+}
+
+#committee {
+    letter-spacing: 1px;
 }
 
 audio {
     width: 100%;
+}
+
+.dropdown-item:focus {
+    background: #f0ad4e;
 }
 
 #sermons, #test, #events, #connect, #news, #faq {
@@ -126,4 +160,12 @@ audio {
 #map {
     height: 400px;
     width: 100%;
+}
+
+#cgcard {
+    transition: transform .2s;
+}
+
+#cgcard:hover {
+    transform: scale(1.05);
 }
