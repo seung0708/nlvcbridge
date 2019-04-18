@@ -1,5 +1,3 @@
-$('#toast').toast(show);
-
 var map, marker, mapLabel;
 
 function initMap() {

@@ -36,7 +36,7 @@ a:hover {
 }
 
 #info {
-    margin-top: -300px;
+    margin-top: -310px;
 }
 
 #bye {
@@ -162,10 +162,38 @@ audio {
     width: 100%;
 }
 
+#maptitle {
+    letter-spacing: 2px !important;
+}
+
 #cgcard {
     transition: transform .2s;
 }
 
 #cgcard:hover {
     transform: scale(1.05);
+}
+
+#main-pic {
+    overflow: hidden;
+    max-height: 720px;
+}
+
+@media screen and (max-width: 480px) {
+    #carouselExampleCaptions {
+        display: none;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
 }

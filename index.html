@@ -14,32 +14,32 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-white shadow-sm">
-    <a class="navbar-brand" href="./index.html"><img class="pl-3" src="./assets/images/logo.png" height="50" alt="logo" /> <span class="text-warning">T H E</span> B R I D G E</a>
+    <a class="navbar-brand" href="https://www.nlvcbridge.com"><img class="pl-3" src="./assets/images/logo.png" height="50" alt="logo" /> <span class="text-warning">T H E</span> B R I D G E</a>
     <button class="navbar-toggler border-0 " type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item mx-3">
-          <a class="nav-link" href="./welcome.html">WELCOME</a>
+          <a class="nav-link" href="./welcome">WELCOME</a>
         </li>
         <li class="nav-item mx-3 dropdown">
           <a class="nav-link" href="#" id="dropdownMenu" data-toggle="dropdown">ABOUT<i class="fas fa-angle-down ml-2"></i></a>
-          <div class="dropdown-menu mt-4" aria-labelledby="dropdownMenu">
-            <a class="dropdown-item" href="./staff.html">PASTORAL STAFF</a>
-            <a class="dropdown-item" href="./values.html">VISION & MISSION VALUES</a>
+          <div class="dropdown-menu border-0" aria-labelledby="dropdownMenu">
+            <a class="dropdown-item" href="./staff">PASTORAL STAFF</a>
+            <a class="dropdown-item" href="./values">VISION & MISSION VALUES</a>
           </div>
         </li>
-        <li class="nav-item mx-3 dropdown">
+        <li class="nav-item mx-3 dropdown border-0">
           <a class="nav-link" href="#" id="dropdownMenu" data-toggle="dropdown">CONNECT<i class="fas fa-angle-down ml-2"></i></a>
-          <div class="dropdown-menu mt-4" aria-labelledby="dropdownMenu">
-            <a class="dropdown-item" href="./communitygroups.html">COMMUNITY GROUPS</a>
-            <a class="dropdown-item" href="./committees.html">COMMITTEES</a>
-            <a class="dropdown-item" href="./events.html">EVENTS</a>
+          <div class="dropdown-menu border-0" aria-labelledby="dropdownMenu">
+            <a class="dropdown-item" href="./communitygroups">COMMUNITY GROUPS</a>
+            <a class="dropdown-item" href="./committees">COMMITTEES</a>
+            <a class="dropdown-item" href="./events">EVENTS</a>
           </div>
         </li>
         <li class="nav-item mx-3">
-          <a class="nav-link" href="./sermons.html">SERMONS</a>
+          <a class="nav-link" href="./sermons">SERMONS</a>
         </li>
         <li class="nav-item mx-3">
           <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">CONTACT</a>
@@ -51,26 +51,36 @@
     </div>
   </nav>
 
-  <div class="bd-example">
+  <div class="bd-example" id="pix">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./assets/images/main.jpg" class="d-block w-100" height="640" alt="...">
+          <img src="./assets/images/main.jpg" class="d-block w-100" alt="..." id="main-pic">
           <div class="carousel-caption d-none d-md-block">
             <h2 class="text-dark">WELCOME TO THE BRIDGE</h2>
             <p class="text-dark font-italic">"a place to connect"</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./assets/images/Arise_FB1.5.jpg" class="d-block w-100" height="640" alt="...">
+          <img src="./assets/images/Arise_FB1.5.jpg" class="d-block w-100" alt="..." id="main-pic">
           <div class="carousel-caption d-none d-md-block">
-            <!-- <h2 class="text-dark bg-light">SECOND SLIDE</h2>
-            <p class="text-dark bg-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+            <div class="bg-light p-2">
+            <h2 class="text-dark">EASTER SUNRISE</h2>
+            <p class="text-dark text-left">Join us for our Easter Sunrise service on Sunday April 21, 2019 @ New Life Vision Church for a gathering of local English Ministries.</p>
+            </div>
           </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/images/Rise.jpg" class="d-block w-100" alt="..." id="main-pic">
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h2 class="text-dark">WELCOME TO THE BRIDGE</h2>
+            <p class="text-dark font-italic">"a place to connect"</p>
+          </div> -->
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -85,11 +95,11 @@
   </div>
   <div class="container-fluid">
     <div class="row text-center" id="middle">
-      <a href="./values.html" class="col-md-2 py-5 px-4" id="test">
+      <a href="./values" class="col-md-2 py-5 px-4" id="test">
           <i class="fas fa-church fa-3x mb-4"></i>
           <h6>VISION</h6>
       </a>
-      <a href="./sermons.html" class="col-md-2 py-5 px-4" id="sermons">
+      <a href="./sermons" class="col-md-2 py-5 px-4" id="sermons">
           <i class="fas fa-headphones-alt fa-3x mb-4"></i>
           <h6>SERMONS</h6>
       </a>
@@ -97,11 +107,11 @@
           <i class="fas fa-link fa-3x mb-4"></i>
           <h6>CONNECT</h6>
       </a>
-      <a href="./events.html" class="col-md-2 py-5 px-4" id="events">
+      <a href="./events" class="col-md-2 py-5 px-4" id="events">
           <i class="far fa-calendar-alt fa-3x mb-4"></i>
           <h6>UPCOMING <span class="text-warning">EVENTS</span></h6>
       </a>
-      <a href="#" class="col-md-2 py-5 px-4" id="news">
+      <a href="#" class="col-md-2 py-5 px-4" data-toggle="modal" data-target="#news-modal" id="news">
           <i class="fas fa-bullhorn fa-3x mb-4"></i>
           <h6>NEWS</h6>
       </a>
@@ -122,16 +132,59 @@
       <div class="row">
           <div class="col-md-3 text-center mx-5" id="info">
             <div class="alert alert-light text-right shadow-sm">
-            <h6 class="text-center"><a href="https://goo.gl/maps/UaFNAvKd9JR2" target="_blank"><i class="fas fa-directions alert-light"></i></a> NLVC | THE BRIDGE</h6>
-              <p class="mt-5 text-right" id="add"><i class="fas fa-map-pin mr-2"></i>4226 E. Verdant St. LA, CA 90039</p>
+            <h6 class="text-left" id="maptitle">THE BRIDGE</h6>
+              <p class="mt-4 text-right" id="add"><i class="fas fa-map-pin mr-2"></i>4226 E. Verdant St. LA, CA 90039</p>
               <p class="mt-2 text-right" id="add"><i class="far fa-clock mr-2"></i>10:45AM</p>
-              
+              <a href="https://goo.gl/maps/UaFNAvKd9JR2" class="btn btn-secondary btn-sm" target="_blank"><i class="fas fa-directions mr-1"></i> DIRECTION</a> 
             </div>  
           </div>
         </div>
       <div class="row">
         <div class="col-md-3 ml-5" id="bye">
           <a href="mailto:nlvcbridge@gmail.com" class="btn alert alert-warning shadow-sm">CONTACT US <i class="fas fa-angle-right ml-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="news-modal" tabindex="-1" role="dialog" aria-labelledby="news-modalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="news-modalTitle"><img class="pr-3"src="./assets/images/logo.png" height="50" alt="logo" />ANNOUNCEMENTS</h5>
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button> -->
+        </div>
+        <div class="modal-body">
+          <h5 class="font-weight-bold mt-2">KM PASSION WEEK DAYBREAK SERVICE</h5>
+          <h6 id="cgp">APRIL 15 - APRIL 17 | 5:10AM | NLVC</h6>
+          <p>Pastor Kang will be preaching on the theme of "The Cross, Beautiful Exchange" and translations will be available. (Please bring your own earphones.)</p>
+          
+          <h5 class="font-weight-bold pt-3">PASSION WEEK PRAISE & PRAYER</h5>
+          <h6 id="cgp">APRIL 17 | 8:00PM | OMC</h6>
+          <p>OMC: Family Chapel has invited us to their annual Passon Week Praise and Prayer.</p>
+
+          <h5 class="font-weight-bold pt-3">GOOD FRIDAY</h5>
+          <h6 id="cgp">APRIL 19 | 7:30PM | NLVC</h6>
+          <p>We will be having a joint worship service with Living Way Community Church.</p>
+
+          <h5 class="font-weight-bold pt-3">EASTER SUNRISE</h5>
+          <h6 id="cgp">APRIL 21 | 5:30AM | NLVC</h6>
+          <p>We invite all of you to join as we celebrate the resurrection of our Lord and Savior Jesus Christ. This will be a joint worship servie with other EM churches in the area.</p>
+
+          <h5 class="font-weight-bold pt-3">EASTER SUNDAY</h5>
+          <h6 id="cgp">APRIL 21 | 10:30AM | NLVC</h6>
+          <p>Please invite your friends as we celebrate the resurrection of Christ on Easter Sunday. We will have gifts and lunch prepared.</p>
+
+          <h5 class="font-weight-bold pt-3">CELEBRATION FOR EASTER 2019</h5>
+          <h6 id="cgp">APRIL 20 - APRIL 21 | NLVC</h6>
+          <p>For more information, please contact Pastor Isaac Hong or Julia Kim.</p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
