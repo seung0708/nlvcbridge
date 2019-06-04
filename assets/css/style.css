@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-    color: #f0ad4e;
+    color: #ffc107;
 }
 
 #add {
@@ -62,7 +62,7 @@ audio {
 }
 
 .dropdown-item:focus {
-    background: #f0ad4e;
+    background: #ffc107;
 }
 
 #sermons, #test, #events, #connect, #news, #faq {
@@ -164,6 +164,10 @@ audio {
 
 #maptitle {
     letter-spacing: 2px !important;
+}
+
+#direction {
+    box-shadow: none;
 }
 
 #cgcard {
