@@ -6,7 +6,7 @@ NLVC: THE BRIDGE is a website created for English ministry at New Life Vision Ch
 
 https://www.nlvcbridge.com
 
-## Utlized
+## Utilized
 
 * HTML
 * CSS
