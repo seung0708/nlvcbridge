@@ -164,7 +164,8 @@ audio {
 }
 
 #map {
-    height: 400px;
+    margin-bottom: -40px;
+    height: 500px;
     width: 100%;
 }
 
