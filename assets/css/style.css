@@ -179,6 +179,7 @@ audio {
 
 #cgcard {
     transition: transform .2s;
+    font-size: 15px;
 }
 
 #cgcard:hover {
