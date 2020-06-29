@@ -12,11 +12,15 @@ h1 {
 }
 
 h2, h4, h5, h6 {
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 
 hr {
     background: #fad778;
+}
+
+P {
+    font-size: 14px
 }
 
 p, h3 {
@@ -71,14 +75,14 @@ audio {
     background: #ffc107;
 }
 
-#sermons, #test, #events, #connect, #news, #faq {
+#sermons, #test, #events, #connect, #news, #prayer {
     
     padding-top: 100px !important;
     padding-bottom: 100px !important;
 
 }
 
-#test, #connect, #news {
+#test, #connect, #events {
     background: #fad778;
     color: white;
 }
@@ -93,6 +97,7 @@ audio {
         url("https://images.unsplash.com/photo-1547247461-2b90d1cbea8b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80");
     
     background-size: 100%;
+    background-position: center;
     background-repeat: none;
 }
 
@@ -103,9 +108,10 @@ audio {
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
         ),
-        url("../images/sermons3.jpg");
+        url("../images/sermon.jpg");
     
     background-size: 100%;
+    background-position: center;
     background-repeat: none;
 }
 
@@ -119,6 +125,7 @@ audio {
         url("../images/connect3.jpg");
     
     background-size: 100%;
+    background-position: center;
     background-repeat: none;
 }
 
@@ -132,6 +139,7 @@ audio {
         url("../images/connect.jpg");
     
     background-size: 100%;
+    background-position: center;
     background-repeat: none;
 }
 
@@ -145,19 +153,21 @@ audio {
         url("../images/news.jpg");
     
     background-size: 100%;
+    background-position: center;
     background-repeat: none;
 }
 
-#faq:hover {
+#prayer:hover {
     color: white;
     background: 
         linear-gradient(
             rgba(0, 0, 0, 0.6),
             rgba(0, 0, 0, 0.6)
         ),
-        url("../images/faq2.jpg");
+        url("../images/prayer.jpg");
     
     background-size: 100%;
+    background-position: center;
     background-repeat: none;
 }
 
@@ -195,8 +205,73 @@ img {
     backface-visibility: hidden;
 }
 
-.image:hover {
-    opacity: 0.5;
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 30px;
+    left: 130px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.middle2 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.eMiddle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+/* .eMiddle p {
+    position: absolute;
+    margin: 0;
+    padding: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 14px;
+} */
+
+/* .eMiddle h5 {
+    position: absolute;
+    margin: 0;
+    padding: 10%;
+    top: 10%;
+    transform: translateY(-50%);
+    color: black;
+    width: 100%;
+    text-align: center;
+} */
+
+.image:hover img {
+    opacity: 0.1;
+}
+
+.image:hover .middle {
+    opacity: 1;
+}
+
+.image:hover .middle2 {
+    opacity: 1;
+}
+
+.image:hover .eMiddle {
+    opacity: 1;
 }
 
 .sermon {
@@ -223,7 +298,47 @@ img {
     position: absolute;
 }
 
-@media screen and (max-width: 480px) {
+#alert {
+    background: black;
+    
+}
+
+#clockdiv{
+    color: #000;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+    border-color: #fad778;
+    border-width: 1px;
+    border-style: solid;
+    /* padding-left: 10px;
+    padding-right: 5px; */
+}
+
+#clockdiv > div{
+    padding: 5px;
+    border-radius: 3px;
+    /* background: #ffc107; */
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    display: inline-block;
+}
+
+.smalltext{
+    font-size: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+@media screen and (max-width: 500px) {
     #carouselExampleCaptions {
         display: none;
     }
@@ -237,10 +352,50 @@ img {
     }
 
     p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     #give {
         margin-top: 5px;
+    }
+
+    .event {
+        margin-top: 50px;
+    }
+
+    #clockdiv {
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #clockdiv > span {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .smalltext {
+        font-size: 15px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .btn-sm-block {
+        display: block;
+        width: 100%;
+    }
+
+    p.events {
+        font-size: 10px;
+    }
+
+    h5.events {
+        font-size: 16px;
+        margin-top: 10px !important;
+    }
+
+    div.events {
+        margin-top: 45px;
     }
 }
