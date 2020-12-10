@@ -1,8 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Events from '../components/Events';
 
-const Info = () => (
+const Links = () => (
     <div class="container-fluid">
     <div class="row text-center" id="middle">
       <a href="./values" class="col-lg-2" id="test">
@@ -31,6 +30,7 @@ const Info = () => (
       </a>
     </div>
   </div>
+  
 )
 
-export default Info;
+export default Links;
