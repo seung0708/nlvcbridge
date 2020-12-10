@@ -1,15 +1,25 @@
 import React from 'react';
+import {GoogleMap, withGoogleMap, withScriptjs} from 'react-google-maps'
 
-const Location = () => (
+
+const Location = props => {
+   
+   return (
+    <GoogleMap 
+    google={props.google}      
+    initialCenter={{ lat: 34.1306434, lng: -118.2666877 }}
+    zoom={11}
+    >
     <div class="row" id="location">
-    <div class="col-md-12">
-      <div id="map"></div>
-      <div class="row">
-        <div class="col-md-3 text-center mx-5" id="hello">
-          <h6 class="alert alert-warning shadow-sm">MAP & DIRECTION</h6>
+    
+      <div class="col-md-12">
+        <div id="map"></div>
+        <div class="row">
+          <div class="col-md-3 text-center mx-5" id="hello">
+            <h6 class="alert alert-warning shadow-sm">MAP & DIRECTION</h6>
+          </div>
         </div>
-      </div>
-      <div class="row">
+        <div class="row">
           <div class="col-md-3 text-center mx-5" id="info">
             <div class="alert alert-light text-right shadow-sm">
               <p class="mt-2 text-right" id="add"><i class="fas fa-map-pin mr-2"></i>4226 E. Verdant St. LA, CA 90039</p>
@@ -19,7 +29,12 @@ const Location = () => (
           </div>
         </div>
     </div>
-  </div>
-);
+   
+   </div>
+    </GoogleMap>
+  )
+};
 
-export default Location;
+const WrappedLocation = withScriptjs(withGoogleMap(Location))
+
+export default WrappedLocation

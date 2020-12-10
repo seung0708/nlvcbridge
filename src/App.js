@@ -1,5 +1,4 @@
-//import logo from '../assets/image/logo.svg';
-//import './App.css';
+import './assets/images/logo.png'
 import './assets/css/style.css'
 import NavBar from './containers/NavBar'
 import Home from './containers/Home'
